@@ -2,8 +2,9 @@
 require 'securerandom'
 
 # Config 
-$desktop_directory = "/users/paulmignard/Desktop/"
-$ideas_directory = "/users/paulmignard/Documents/_ideas/"
+$user = ENV["USER"]
+$desktop_directory = "/users/" + $user + "/Desktop/"
+$ideas_directory = "/users/" + $user + "/Documents/_ideas/"
 
 # Counters
 $file_count = 0
